@@ -5,40 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <style media="screen"></style>
   </head>
-  <body>
-    <header>
-      <div>
-        <a>Bedirhan CAN</a>
-        <nav>
-          <ul>
-            <li>
+  <body id="body2">
+    <header class="main-header">
+      <div id="main-nav" class="container">
+        <a class="main-header__logo">Bedirhan CAN</a>
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
               <a href="ana-sayfa.html">Ana Sayfa</a>
             </li>
-            <li>
+            <li class="main-nav__item">
               <a href="ozgecmis.html">Özgeçmiş</a>
             </li>
-            <li>
+            <li class="main-nav__item">
               <a href="sehrim.html">Şehrim</a>
             </li>
-            <li>
+            <li class="main-nav__item">
               <a href="takimimiz.html">Takımımız</a>
             </li>
-            <li>
+            <li class="main-nav__item">
               <a href="mirasimiz.html">Mirasımız</a>
             </li>
-            <li>
+            <li class="main-nav__item">
               <a href="ilgi-alani.html">İlgi Alanlarım</a>
             </li>
-            <li>
+            <li class="main-nav__item">
               <a href="iletisim.html">İletişim</a>
             </li>
-            <li>
-              <a href="login.html">Login</a>
+            <li class="main-nav__item main-nav__item--login">
+              <a class="btn btn-secondary" href="login.html">Login</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    <form>
+      <h3>Login Here</h3>
+
+      <label for="username">Username</label>
+      <input type="text" placeholder="Email or Phone" id="username" />
+
+      <label for="password">Password</label>
+      <input type="password" placeholder="Password" id="password" />
+
+      <button>Log In</button>
+      <div class="social">
+        <div class="go"><i class="fab fa-google"></i> Google</div>
+        <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
+      </div>
+    </form>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <ul id="footer-links">
+              <li>
+                <a href=""
+                  ><small
+                    >Copyright © Alaska Company. All rights reserved.</small
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul id="social-links">
+              <li>
+                <a
+                  href="https://www.facebook.com/bedocann8/"
+                  class="fab fa-facebook"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/bedocann8"
+                  class="fab fa-twitter"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/bedocann8/"
+                  class="fab fa-instagram"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/bedirhancan/"
+                  class="fab fa-linkedin"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a href="https://vsco.co/bedocann8/" target="_blank">
+                  <img
+                    class="vsco"
+                    src="https://assets.vsco.co/assets/images/icons/vsco-seal.svg"
+                    alt="vsco logo"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/user/c3p98u36gl1np9cwmypbmmnf7?si=760845a043b24cd1"
+                  class="fab fa-spotify"
+                  target="_blank"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#body" id="backtotop">
+      <i class="fas fa-chevron-circle-up"></i>
+    </a>
   </body>
 </html>
