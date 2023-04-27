@@ -97,12 +97,12 @@ footer ul li {
 }
 
 .fa-facebook {
-    background-color: #3B5998;
+    background-color: #4267B2;
     color: #fff;
 }
 
 .fa-twitter {
-    background-color: #55ACEE;
+    background-color: #1DA1F2;
     color: #fff;
 }
 .vsco {
@@ -111,6 +111,7 @@ footer ul li {
     margin: auto;
     background-color: #F1F6F9;
     border-radius: 50%;
+    padding: 2px;
   }
 .fa-instagram {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
@@ -118,19 +119,14 @@ footer ul li {
     color: #fff;
 }
 .fa-linkedin {
-    background-color: #55ACEE;
+    background-color: #0077B5;
     color: #fff;
 }
 .fa-spotify
 {
-    background-color: #55ACEE;
-    color: #fff;
+    background-color: #191414;
+    color: #1DB954;
 }
-.fa-pinterest{
-    background-color: gray;
-    color:#F1F6F9;
-}
-  
 #how-it-works { 
     padding: 1rem;
     text-align: center;
@@ -145,10 +141,10 @@ footer ul li {
 #showcase { 
     background: 
     linear-gradient(to bottom, rgba(252, 153, 124, 0.2),rgba(250, 81, 30, 0.2)),
-    url('/image/bg.jpeg');
+    url('../image/215392.png');
     background-position: center;
     background-size: cover;
-    height: 40vh;
+    height: 60vh;
     width: 100%;
     position: relative;
 }

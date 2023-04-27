@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 #body2{
-    background-color: #080710;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 .background{
     width: 430px;
@@ -23,23 +23,6 @@
     width: 200px;
     position: absolute;
     border-radius: 50%;
-}
-.shape:first-child{
-    background: linear-gradient(
-        #1845ad,
-        #23a2f6
-    );
-    left: -80px;
-    top: -80px;
-}
-.shape:last-child{
-    background: linear-gradient(
-        to right,
-        #ff512f,
-        #f09819
-    );
-    right: -30px;
-    bottom: -80px;
 }
 form{
     height: 520px;
