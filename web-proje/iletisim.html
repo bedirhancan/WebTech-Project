@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>İletişim</title>
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/forms.css" />
   </head>
   <body id="body">
     <header class="main-header">
@@ -42,21 +43,46 @@
       </div>
     </header>
 
-    <main>
-      <section id="showcase">
-        <div class="content">
-          <h2 style="text-align: center;">BEN KİMİM?</h2>
-        </div>
-      </section>
-      <section id="how-it-works">
-        <div class="container">
-          <div class="row">
-            <h2 class="section-title">Hakkımda</h2>
-            <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit quaerat temporibus dicta corrupti, illum quae nisi earum quidem quos quas quo, aliquid ad excepturi rem? Eligendi quis veritatis eius obcaecati odio dolorum, odit numquam labore recusandae eos. Voluptatibus earum eum voluptatum error dolor perferendis quidem ad at impedit tempora saepe soluta consequatur debitis, incidunt eaque assumenda quis nesciunt obcaecati. Quos iure et alias nesciunt ullam quisquam, modi necessitatibus rem ex. Esse amet facere commodi nostrum asperiores? Cupiditate quaerat aut voluptatibus optio, veniam, impedit quasi reiciendis repellendus perspiciatis, incidunt quam aliquam animi ipsam dolores quas doloribus error voluptates reprehenderit! Necessitatibus nesciunt sequi laboriosam eum fugit architecto eius magni repellat aliquid quod, ipsam soluta expedita amet beatae rerum sit praesentium voluptate pariatur quisquam voluptates quidem? Perferendis cupiditate consequatur maiores? Doloribus, amet. Dolorem delectus neque necessitatibus illum distinctio nihil molestias corporis animi explicabo beatae, placeat commodi odit laboriosam rerum est, molestiae laudantium fuga aperiam nostrum praesentium provident quas? Eligendi fugit quas consequuntur, excepturi quisquam iusto voluptatem numquam, voluptatibus accusamus deserunt dignissimos et pariatur sapiente cupiditate dolorem molestiae totam modi quia explicabo iste necessitatibus nam veniam? Nemo mollitia eius obcaecati? Est tenetur recusandae alias eligendi amet explicabo. Odio id, consequuntur minima ab porro quisquam maxime? Iure, maxime, nam mollitia commodi eveniet autem qui dolorem labore natus quod omnis possimus distinctio dicta inventore cupiditate delectus harum, sit ut facere sequi reiciendis aliquid tempora. Ratione ut doloribus qui consequatur explicabo, laboriosam earum! Obcaecati quaerat distinctio debitis, consequatur possimus, sunt ut blanditiis iure ducimus odio beatae itaque alias. Hic labore cum nulla eos! Dolorum, consequuntur. Accusantium dolorem nam dolor! Nisi, iusto. Nihil expedita nobis velit repellat quo nostrum esse ipsum, iure provident fugiat debitis nisi excepturi porro ullam, in architecto omnis error delectus minus laboriosam, consequatur nam? Cumque architecto, corporis ipsam enim, doloremque eius aspernatur, similique voluptatem placeat numquam fugiat soluta? Voluptates, reprehenderit? Velit libero fuga alias tempora, quia est omnis exercitationem cum tempore enim necessitatibus possimus consequuntur, quis suscipit dolorem delectus molestiae error qui odio voluptate praesentium repudiandae perferendis, id ut! Eligendi tempora vero nostrum cum, aperiam laboriosam cumque delectus repudiandae commodi tenetur aliquam eaque error cupiditate iure totam ad animi, deserunt voluptas soluta provident iusto. Dicta error sequi alias vero. Necessitatibus et natus, quis provident nobis ratione amet rerum, vel fuga labore tempore non odit quae quo voluptas! Architecto excepturi aspernatur quas, a tempora reprehenderit. Repudiandae provident odit nostrum? Nihil libero in numquam omnis illum quidem, odio, temporibus, excepturi dicta placeat qui debitis minima tempore rerum nisi quis esse deserunt ratione maxime quisquam sint! Consequuntur laborum consequatur libero dolor animi totam commodi porro voluptatum odio. Fuga quas voluptas quasi, sunt quos deleniti, esse aliquam corrupti tenetur officiis assumenda in eaque optio! Pariatur consectetur vel quia rem corporis quaerat. Minima sunt eius quisquam sit dolor, labore dignissimos atque repellat tenetur architecto velit obcaecati ullam tempora soluta incidunt ut voluptatibus quidem quos laborum nobis eos! Cumque odio iste atque culpa eaque dicta laborum similique ullam sit rem ad eos distinctio libero aliquam impedit dolorum fugiat, vero architecto.
-            </p>
-          </div>
-      </section>
+    <main class="signup-page">
+      <div class="container">
+        <h1 class="signup-title">İletişim</h1>
+        <form action="" class="signup-form">
+          <label for="firstname">First Name</label>
+          <input
+            type="text"
+            id="firstname"
+            required
+            autofocus
+            autocomplete="off"
+          />
+
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" required autocomplete="off" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" required autocomplete="off" />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+
+          <label for="gender">Gender</label>
+          <select id="gender" required>
+            <option value="">Select</option>
+            <option value="">Kadın</option>
+            <option value="">Erkek</option>
+          </select>
+          <label for="language">Language</label>
+          <input type="radio" name="c++" id="c++" />
+
+          <input type="checkbox" id="agree-terms" required />
+          <label for="agree-terms"
+            >Agree to
+            <a href="#">Terms &amp; Conditions</a>
+          </label>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
     </main>
 
     <footer>
@@ -64,23 +90,67 @@
         <div class="row">
           <div class="col-2">
             <ul id="footer-links">
-              <li><a href=""><small>Copyright © Alaska Company. All rights reserved.</small></a></li>
+              <li>
+                <a href=""
+                  ><small
+                    >Copyright © Alaska Company. All rights reserved.</small
+                  ></a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-2">
             <ul id="social-links">
-              <li><a href="https://www.facebook.com/bedocann8/" class="fab fa-facebook" target="_blank"></a></li>
-              <li><a href="https://twitter.com/bedocann8" class="fab fa-twitter" target="_blank"></a></li>
-              <li><a href="https://www.instagram.com/bedocann8/" class="fab fa-instagram" target="_blank"></a></li>
-              <li><a href="https://www.linkedin.com/in/bedirhancan/" class="fab fa-linkedin" target="_blank"></a></li>
-              <li> <a href="https://vsco.co/bedocann8/" target="_blank">  <img class="vsco"  src="https://assets.vsco.co/assets/images/icons/vsco-seal.svg" alt="vsco logo"> </a></li>
-              <li><a href="https://open.spotify.com/user/c3p98u36gl1np9cwmypbmmnf7?si=760845a043b24cd1" class="fab fa-spotify" target="_blank"></a></li>
+              <li>
+                <a
+                  href="https://www.facebook.com/bedocann8/"
+                  class="fab fa-facebook"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/bedocann8"
+                  class="fab fa-twitter"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/bedocann8/"
+                  class="fab fa-instagram"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/bedirhancan/"
+                  class="fab fa-linkedin"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a href="https://vsco.co/bedocann8/" target="_blank">
+                  <img
+                    class="vsco"
+                    src="https://assets.vsco.co/assets/images/icons/vsco-seal.svg"
+                    alt="vsco logo"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/user/c3p98u36gl1np9cwmypbmmnf7?si=760845a043b24cd1"
+                  class="fab fa-spotify"
+                  target="_blank"
+                ></a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
-    
+
     <!-- <a href="#body" id="backtotop">
       <i class="fas fa-chevron-circle-up"></i>
      </a> -->

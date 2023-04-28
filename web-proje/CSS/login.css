@@ -8,11 +8,11 @@
     box-sizing: border-box;
 }
 #body2{
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background: radial-gradient(#434343 , #000000);
 }
 .background{
-    width: 430px;
-    height: 520px;
+    width: 400px;
+    height: 500px;
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
@@ -24,13 +24,13 @@
     position: absolute;
     border-radius: 50%;
 }
-form{
-    height: 520px;
+.forma{
+    height: 500px;
     width: 400px;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 50%;
+    top: 46%;
     left: 50%;
     border-radius: 10px;
     backdrop-filter: blur(10px);
@@ -38,7 +38,7 @@ form{
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
 }
-form *{
+.forma *{
     font-family: 'Poppins',sans-serif;
     color: #ffffff;
     letter-spacing: 0.5px;
@@ -83,29 +83,4 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
-.social{
-  margin-top: 30px;
-  display: flex;
-}
-.social div{
-  background: red;
-  width: 150px;
-  border-radius: 3px;
-  padding: 5px 10px 10px 5px;
-  background-color: rgba(255,255,255,0.27);
-  color: #eaf0fb;
-  text-align: center;
-}
-.social div:hover{
-  background-color: rgba(255,255,255,0.47);
-}
-.social .fb{
-  margin-left: 25px;
-}
-.social i{
-  margin-right: 4px;
-}
-
- 
-   
 
