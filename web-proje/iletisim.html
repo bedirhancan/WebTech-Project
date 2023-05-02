@@ -17,7 +17,7 @@
   <body id="body">
     <header class="main-header">
       <div id="main-nav" class="container-fluid">
-        <a class="main-header__logo" >Bedirhan Can</a>
+        <a class="main-header__logo">Bedirhan Can</a>
         <nav class="main-nav">
           <ul class="main-nav__items">
             <li class="main-nav__item">
@@ -33,17 +33,14 @@
               <a href="takimimiz.html">Takımımız</a>
             </li>
             <li class="main-nav__item">
-              <a href="mirasimiz.html">Mirasımız</a>
-            </li>
-            <li class="main-nav__item">
               <a href="ilgi-alani.html">İlgi Alanlarım</a>
             </li>
             <li class="main-nav__item">
               <a href="iletisim.html">İletişim</a>
             </li>
-              <li class="main-nav__item main-nav__item--login">
-                <a class="btn btn-secondary" href="login.html">Login</a>
-            </ul>
+            <li class="main-nav__item main-nav__item--login">
+              <a class="btn btn-secondary" href="login.html">Login</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -52,7 +49,7 @@
     <main class="signup-page">
       <div class="container">
         <form action="/PHP/iletisim.php" class="signup-form">
-        <h1 class="signup-title">İletişim</h1>
+          <h1 class="signup-title">İletişim</h1>
           <label for="isim">İsim</label>
           <input
             type="text"
@@ -65,7 +62,14 @@
           <input type="text" id="soyisim" required autocomplete="off" />
 
           <label for="tel">Telefon Numarası</label>
-          <input type="tel" pattern="[0-9]{11}" placeholder="05xx-xxx-xx-xx" required name="tel" id="tel">
+          <input
+            type="tel"
+            pattern="[0-9]{11}"
+            placeholder="05xx-xxx-xx-xx"
+            required
+            name="tel"
+            id="tel"
+          />
 
           <label for="email">Email</label>
           <input type="email" id="email" required autocomplete="off" />
@@ -86,8 +90,8 @@
           <input type="radio" name="python" id="python" value="python" />Python
           <input type="radio" name="java" id="java" value="java" />Java
           <label for="adres">Adres</label>
-          <input type="text" name="adres" id="adres"required />
-          <input type="file" name="file" id="file" required>
+          <input type="text" name="adres" id="adres" required />
+          <input type="file" name="file" id="file" required />
           <br />
           <input type="checkbox" id="agree-terms" required />
           <label for="agree-terms"
@@ -96,11 +100,11 @@
           </label>
           <div class="form-row">
             <div class="col-sm-12 mt-3">
-              <input type="reset" class="btn btn-danger" value="Temizle" >  
-              <input type="submit" class="btn btn-success" value="Gönder">
+              <input type="reset" class="btn btn-danger" value="Temizle" />
+              <input type="submit" class="btn btn-success" value="Gönder" />
             </div>
-          </div> 
-          <br>
+          </div>
+          <br />
         </form>
       </div>
     </main>
