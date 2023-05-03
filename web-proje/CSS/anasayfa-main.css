@@ -5,7 +5,13 @@
 .main-bg{
     background: radial-gradient(#434343 , #000000);
 
-      }
+}
+.main-bg1{
+    background: linear-gradient(to bottom, rgba(252, 153, 124, 0.2),rgba(250, 81, 30, 0.2)),
+    url('../image/takım.jpg');
+
+}
+
 
 .section-title {
     text-align: center;
@@ -17,6 +23,16 @@
     background: 
     linear-gradient(to bottom, rgba(252, 153, 124, 0.2),rgba(250, 81, 30, 0.2)),
     url('../image/main-background.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+}
+#showcase-takim{
+    background: 
+    linear-gradient(to bottom, rgba(252, 153, 124, 0.2),rgba(250, 81, 30, 0.2)),
+    url('../image/takım.jpg');
     background-position: center;
     background-size: cover;
     height: 60vh;
