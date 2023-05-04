@@ -1,4 +1,19 @@
-<!DOCTYPE html>
+<?php 
+                          
+$myemail="g221210053@ogr.sakarya.edu.tr";
+$mysifre="221210053";
+$email = $_POST['email'];
+$sifre = $_POST['sifre'];
+$namen=explode("@",$email);
+$signal=false;
+if($email==$myemail && $mysifre==$sifre)
+{
+$signal=true;          
+}else {
+$signal=false;
+header("refresh:5;url=login.html");
+}
+?>
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
@@ -14,7 +29,9 @@
     <link rel="stylesheet" href="CSS/header-footer.css" />
     <link rel="stylesheet" href="CSS/login.css">
   </head>
+ 
   <body id="body2">
+
     <script src="Javascript/validation.js"></script>
     <script src="Javascript/changeValidate.js"></script>
 
@@ -53,32 +70,17 @@
         <div class="container">
           <div class="row">
             <p>
-              <form action="PHP/login.php" class="forma"  name="myForm"  method="post" onsubmit ="return validate();" >
-                <h2 class="section-title" ><b style="color: goldenrod;">Login Here</b></h2>
-                <div>
-                <label for="email"><b style="color: goldenrod;">Email</b>(g221210053@ogr.sakarya.edu.tr)</label>
-                <input type="text" placeholder="Email"  name="email" id="email" onchange="emailV();" required autofocus autocomplete="off"/>
-                <div class="valid-feedback">
-                  Kriterlere uyuyor.  
-                </div>
-                <div class="invalid-feedback">
-                  Alan boş ya da girdiğiniz bilgiler Email formatında değil!
-                </div>
-                </div>
-                <div>
-                <label for="sifre"><b style="color: goldenrod;">Password</b> (221210053)</label>
-                <input type="password" placeholder="Password"   name="sifre" onchange="sifreV();" required />
-                <div class="invalid-feedback">
-                  Alan boş ya da şifre rakamdan başka karakter içeriyor!
-                </div>
-                <div class="valid-feedback">
-                  Kriterlere Uyuyor.  
-                </div>
-                </div>
-                
-               <input style="background: radial-gradient(#434343 , #000000); font-weight: bold; color: goldenrod; " class="mt-5" type="submit" value="Log In">
-
-              </form>
+            <?php
+                    if($signal==true)
+                    {
+                      echo $namen[0]."  Hoşgeldin" ;
+                    }
+                    else
+                    {
+                      echo "Kullanıcı epostası yada şifre hatalı ";
+                      echo "5 saniye içinde geri yönlendiriliyorsunuz";
+                    }
+                  ?>
             </p>
           </div>
       </section>

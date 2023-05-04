@@ -11,7 +11,7 @@ main {
 }
 
 .main-header {
-    background-color: #569DAA;
+    background-color: #212A3E;
     padding: .8rem 1.6rem;
 }
 .main-sehrim{
@@ -54,7 +54,7 @@ main {
 }
 
 .main-nav__item a:hover, .main-nav__item:hover::before {
-    color: #B9EDDD;
+    color: goldenrod;
 
 }      
 
@@ -63,13 +63,14 @@ main {
 }
 
 
+
 footer {
-    background-color: #2E4C6D;
+    background-color: #212A3E;
     padding: 30px;
 }
 
 footer a {
-    color: #fff;
+    color: #F1F6F9;
     font-size: 18px;
     text-decoration: none;
 }
@@ -100,12 +101,12 @@ footer ul li {
 
 .fa-facebook {
     background-color: #4267B2;
-    color: #fff;
+    color: #F1F6F9;
 }
 
 .fa-twitter {
     background-color: #1DA1F2;
-    color: #fff;
+    color: #F1F6F9;
 }
 .vsco {
     width: 38px;
@@ -118,11 +119,11 @@ footer ul li {
 .fa-instagram {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
-    color: #fff;
+    color: #F1F6F9;
 }
 .fa-linkedin {
     background-color: #0077B5;
-    color: #fff;
+    color: #F1F6F9;
 }
 .fa-spotify
 {
@@ -136,7 +137,7 @@ footer ul li {
 }
 
 #backtotop i {
-    color: #fff;
+    color: #F1F6F9;
     font-size: 31px;
     transition: color .6s;
 }

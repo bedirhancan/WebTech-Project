@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="CSS/iletisim.css" />
   </head>
   <body id="body">
+    <script src="Javascript/validation.js"></script>
+    <script src="Javascript/changeValidate.js"></script>
+
     <header class="main-header">
       <div id="main-nav" class="container-fluid">
         <a class="main-header__logo">Bedirhan Can</a>
@@ -48,18 +51,24 @@
 
     <main class="signup-page">
       <div class="container">
-        <form action="/PHP/iletisim.php" class="signup-form">
+        <form
+          action="/PHP/iletisim.php"
+          class="signup-form"
+          onsubmit="return validate();"
+          method="post"
+          name="myForm"
+        >
           <h1 class="signup-title">İletişim</h1>
           <label for="isim">İsim</label>
           <input
             type="text"
-            id="firstname"
+            name="isim"
             required
             autofocus
             autocomplete="off"
           />
           <label for="soyisim">Soyisim</label>
-          <input type="text" id="soyisim" required autocomplete="off" />
+          <input type="text" name="soyisim" required autocomplete="off" />
 
           <label for="tel">Telefon Numarası</label>
           <input
@@ -68,32 +77,60 @@
             placeholder="05xx-xxx-xx-xx"
             required
             name="tel"
-            id="tel"
           />
-
-          <label for="email">Email</label>
-          <input type="email" id="email" required autocomplete="off" />
-
-          <label for="sifre">Şifre</label>
-          <input type="sifre" id="sifre" required />
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="text"
+              name="email"
+              required
+              autocomplete="off"
+              onchange="emailV();"
+            />
+            <div class="valid-feedback">Kriterlere uyuyor</div>
+            <div class="invalid-feedback">
+              Alan boş ya da girdiğiniz bilgiler Email formatında değil!
+            </div>
+          </div>
+          <div>
+            <label for="sifre">Şifre</label>
+            <input type="password" name="sifre" required onchange="sifreV();" />
+            <div class="invalid-feedback">
+              Alan boş yada Şifre rakamdan başka karakter içeriyor
+            </div>
+            <div class="valid-feedback">Kriterlere Uyuyor</div>
+          </div>
 
           <label for="cinsiyet">Cinsiyet</label>
-          <select id="cinsiyet" required>
+          <select name="cinsiyet" required>
             <option value="">Select</option>
             <option value="">Kadın</option>
             <option value="">Erkek</option>
           </select>
           <br />
-          <p>Favori Programlama Diliniz</p>
-          <input type="radio" name="c++" id="c++" value="c++" />C++
-          <input type="radio" name="c#" id="c#" value="c#" />C#
-          <input type="radio" name="python" id="python" value="python" />Python
-          <input type="radio" name="java" id="java" value="java" />Java
-          <label for="adres">Adres</label>
-          <input type="text" name="adres" id="adres" required />
-          <input type="file" name="file" id="file" required />
+          <div>
+            <p>Favori Programlama Diliniz</p>
+            <input
+              type="radio"
+              name="language"
+              id="c++"
+              value="c++"
+              checked
+            />C++ <input type="radio" name="language" id="c#" value="c#" />C#
+            <input
+              type="radio"
+              name="python"
+              id="python"
+              value="python"
+            />Python
+            <input type="radio" name="language" id="java" value="java" />Java
+            <label for="adres">Adres</label>
+            <input type="text" name="language" id="adres" required />
+          </div>
+
+          <input type="file" name="dosya" id="dosya" required />
           <br />
-          <input type="checkbox" id="agree-terms" required />
+          <input type="checkbox" name="agree-terms" required />
           <label for="agree-terms"
             >Agree to
             <a href="#">Terms &amp; Conditions</a>
@@ -184,5 +221,8 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="Javascript/jquery.js"></script>
+    <script src="Javascript/popper.min.js"></script>
+    <script src="Javascript/bootstrap.js"></script>
   </body>
 </html>

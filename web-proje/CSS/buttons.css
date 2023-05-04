@@ -1,3 +1,16 @@
+
+.btn-secondary {
+    background: #5b73a4;
+    color: #F1F6F9;
+    border: 2px solid #212A3E;
+}
+
+.btn-secondary:hover {
+    background: radial-gradient(#434343 , #000000);
+    color: goldenrod;
+    border: 2px solid goldenrod;
+}
+
 .btn {
     text-align: center;
     text-decoration: none;
@@ -32,18 +45,6 @@
     background: #F1F6F9;
     color: #F1F6F9;
     border: 2px solid #FC997C;
-}
-
-.btn-secondary {
-    background: #2E4C6D;
-    color: #F1F6F9;
-    border: 2px solid #2E4C6D;
-}
-
-.btn-secondary:hover {
-    background: #fff;
-    color: #2E4C6D;
-    border: 2px solid #2E4C6D;
 }
 
 .btn-outline-secondary {
