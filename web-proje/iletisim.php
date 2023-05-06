@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="CSS/iletisim.css" />
   </head>
   <body id="body">
-    <script src="Javascript/validation.js"></script>
-    <script src="Javascript/changeValidate.js"></script>
 
     <header class="main-header">
       <div id="main-nav" class="container-fluid">
@@ -51,107 +49,60 @@
 
     <main class="signup-page">
       <div class="container">
-        <form
-          action="iletisim.php"
-          class="signup-form"
-          onsubmit="return validate();"
-          method="post"
-          name="myForm"
-        >
-          <h1 class="signup-title">İletişim</h1>
-          <label for="isim">İsim</label>
-          <input
-            type="text"
-            name="isim"
-            id="name"
-            required
-            autofocus
-            autocomplete="off"
-          />
-          <label for="soyisim">Soy ismi</label>
-          <input
-            type="text"
-            name="soyisim"
-            id="soyisim"
-            required
-            autocomplete="off"
-          />
-
-          <label for="tel">Telefon Numarası</label>
-          <input
-            type="tel"
-            pattern="[0-9]{10}"
-            placeholder="55x-xxx-xx-xx"
-            required
-            name="tel"
-            id="tel"
-          />
-          <div>
-            <label for="email">Email</label>
-            <input
-              type="text"
-              name="email"
-              required
-              autocomplete="off"
-              onchange="emailV();"
-            />
-            <div class="valid-feedback">Kriterlere uyuyor</div>
-            <div class="invalid-feedback">
-              Alan boş ya da girdiğiniz bilgiler Email formatında değil!
+          
+<section id="abilities3" class="text-white mx-5 mb-5">
+        <div class="bg-dark container border border-secondary rounded shadow-lg">
+          <div class="row my-3 ">
+            <div class="col-lg-12 my-4">
+              <h1 class="display-3 text-white" style="text-align:center" >İletişim Bilgileri</h1>
             </div>
           </div>
-          <div>
-            <label for="sifre">Şifre</label>
-            <input type="password" name="sifre" required onchange="sifreV();" />
-            <div class="invalid-feedback">
-              Alan boş ya da şifre rakamdan başka karakter içeriyor!
+          <div class="row my-1 ">
+            <div class="col-lg-12 my-1">
+            <table   class="table table-striped table-dark my-table" style="text-align:center">
+            	<tr>
+            	   <td >İsim</td>
+            	   <td ><?php echo $_POST["isim"]?></td>
+            	</tr>
+              <tr>
+            	   <td >Soy ismi</td>
+            	   <td ><?php echo $_POST["soyisim"]?></td>
+            	</tr>
+              <tr>
+            	   <td >Telefon Numarası</td>
+            	   <td ><?php echo "+90 "; echo $_POST["tel"]?></td>
+            	</tr>
+              <tr>
+                <td>Email</td>
+                <td ><?php echo $_POST["email"]?></td>
+            	</tr>
+              <tr>
+                <td>Şifre</td>
+                <td ><?php echo $_POST["sifre"]?></td>
+              </tr>
+              <tr>
+                <td>Cinsiyet</td>
+                <td ><?php echo $_POST["cinsiyetler"]?></td>
+              </tr>
+              <tr>
+                <td>En Sevilen Programlama Dili</td>
+                <td ><?php echo $_POST["language"]?></td>
+              </tr>
+              <tr>
+                <td>Adres</td>
+                <td ><?php echo $_POST["adres"]?></td>
+              </tr>
+              <tr>
+            	   <td >Dosya</td>
+            	   <td ><?php echo $_POST["dosya"]?></td>
+            	</tr>
+                </table>
+              </div>
             </div>
-            <div class="valid-feedback">Kriterlere uyuyor</div>
-          </div>
+        </div>
+      </section>
 
-          <label for="cinsiyet">Cinsiyet</label>
-          <select name="cinsiyetler" id="cinsiyet" required>
-            <option value="Select" disabled selected>Select</option>
-            <option value="Kadın">Kadın</option>
-            <option value="Erkek">Erkek</option>
-          </select>
-          <br />
-          <div>
-            <p>Favori Programlama Diliniz</p>
-            <input
-              type="radio"
-              name="language"
-              id="c++"
-              value="c++"
-              checked
-            />C++ <input type="radio" name="language" id="c#" value="c#" />C#
-            <input
-              type="radio"
-              name="python"
-              id="python"
-              value="python"
-            />Python
-            <input type="radio" name="language" id="java" value="java" />Java
-          </div>
-          <label for="adres">Adres</label>
-          <input type="text" name="adres" id="adres" required />
-
-          <input type="file" name="dosya" id="dosya" required />
-          <br />
-          <input type="checkbox" name="agree-terms" required />
-          <label for="agree-terms"
-            >Agree to
-            <a href="#">Terms &amp; Conditions</a>
-          </label>
-          <div class="form-row">
-            <div class="col-sm-12 mt-3">
-              <input type="reset" class="btn btn-danger" value="Temizle" />
-              <input type="submit" class="btn btn-success" value="Gönder" />
-            </div>
-          </div>
-          <br />
-        </form>
-      </div>
+    </div>
     </main>
 
     <footer>
@@ -161,7 +112,9 @@
             <ul id="footer-links">
               <li>
                 <a href=""
-                  ><small>Copyright © 2023. All rights reserved.</small></a
+                  ><small
+                    >Copyright © 2023 . All rights reserved.</small
+                  ></a
                 >
               </li>
             </ul>
@@ -227,8 +180,8 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script src="Javascript/jquery.js"></script>
-    <script src="Javascript/popper.min.js"></script>
-    <script src="Javascript/bootstrap.js"></script>
+    <script src="/Javascript/jquery.js"></script>
+    <script src="/Javascript/popper.min.js"></script>
+    <script src="/Javascript/bootstrap.js"></script>
   </body>
 </html>
