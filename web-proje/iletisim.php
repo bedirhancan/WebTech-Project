@@ -16,7 +16,7 @@
   </head>
   <body id="body">
 
-    <header class="main-header">
+  <header class="main-header">
       <div id="main-nav" class="container-fluid">
         <a class="main-header__logo">Bedirhan Can</a>
         <nav class="main-nav">
@@ -34,7 +34,7 @@
               <a href="takimimiz.html">Takımımız</a>
             </li>
             <li class="main-nav__item">
-              <a href="ilgi-alani.html">İlgi Alanlarım</a>
+              <a href="ilgi-alani.php">İlgi Alanlarım</a>
             </li>
             <li class="main-nav__item">
               <a href="iletisim.html">İletişim</a>
@@ -47,6 +47,7 @@
       </div>
     </header>
 
+
     <main class="signup-page">
       <div class="container">
           
@@ -57,43 +58,43 @@
               <h1 class="display-3 text-white" style="text-align:center" >İletişim Bilgileri</h1>
             </div>
           </div>
-          <div class="row my-1 ">
+          <div class="row my-1 mb-5 ">
             <div class="col-lg-12 my-1">
             <table   class="table table-striped table-dark my-table" style="text-align:center">
             	<tr>
-            	   <td >İsim</td>
+            	   <td ><b style="color: goldenrod;">İsim</b></td>
             	   <td ><?php echo $_POST["isim"]?></td>
             	</tr>
               <tr>
-            	   <td >Soy ismi</td>
+            	   <td ><b style="color: goldenrod;">Soy ismi</b></td>
             	   <td ><?php echo $_POST["soyisim"]?></td>
             	</tr>
               <tr>
-            	   <td >Telefon Numarası</td>
+            	   <td ><b style="color: goldenrod;"> Telefon Numarası </b></td>
             	   <td ><?php echo "+90 "; echo $_POST["tel"]?></td>
             	</tr>
               <tr>
-                <td>Email</td>
+                <td><b style="color: goldenrod;"> Email</b></td>
                 <td ><?php echo $_POST["email"]?></td>
             	</tr>
               <tr>
-                <td>Şifre</td>
+                <td><b style="color: goldenrod;"> Şifre</b></td>
                 <td ><?php echo $_POST["sifre"]?></td>
               </tr>
               <tr>
-                <td>Cinsiyet</td>
+                <td><b style="color: goldenrod;"> Cinsiyet</b></td>
                 <td ><?php echo $_POST["cinsiyetler"]?></td>
               </tr>
               <tr>
-                <td>En Sevilen Programlama Dili</td>
+                <td><b style="color: goldenrod;"> En Sevilen Programlama Dili</b></td>
                 <td ><?php echo $_POST["language"]?></td>
               </tr>
               <tr>
-                <td>Adres</td>
+                <td><b style="color: goldenrod;"> Adres</b></td>
                 <td ><?php echo $_POST["adres"]?></td>
               </tr>
               <tr>
-            	   <td >Dosya</td>
+            	   <td ><b style="color: goldenrod;"> Dosya</b></td>
             	   <td ><?php echo $_POST["dosya"]?></td>
             	</tr>
                 </table>

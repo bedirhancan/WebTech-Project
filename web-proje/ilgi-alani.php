@@ -10,15 +10,12 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
     crossorigin="anonymous"
   />
-    <title>Login</title>
+    <title>İlgi Alanlarım</title>
     <link rel="stylesheet" href="CSS/header-footer.css" />
-    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/anasayfa-main.css">
   </head>
-  <body id="body2">
-    <script src="Javascript/validation.js"></script>
-    <script src="Javascript/changeValidate.js"></script>
-
-    <header class="main-header">
+  <body id="body">
+  <header class="main-header">
       <div id="main-nav" class="container-fluid">
         <a class="main-header__logo">Bedirhan Can</a>
         <nav class="main-nav">
@@ -49,43 +46,68 @@
       </div>
     </header>
 
-    <main>
+    <main class="main-bg">
       <section id="how-it-works">
         <div class="container">
           <div class="row">
-            <p>
-              <form action="login.php" class="forma"  name="myForm"  method="POST" onsubmit ="return validate();" >
-                <h2 class="section-title" ><b style="color: goldenrod;">Login Here</b></h2>
-                <div>
-                <label for="email"><b style="color: goldenrod;">Email</b>(g221210053@ogr.sakarya.edu.tr)</label>
-                <input type="text" placeholder="Email"  name="email" id="email" onchange="emailV();" required autofocus autocomplete="off"/>
-                <div class="valid-feedback">
-                  Kriterlere uyuyor.  
+            <section  class="text-white mx-5 mb-5 mt-5">
+              <div class="bg-dark container border border-secondary rounded shadow-lg">
+                <div class="row my-3 ">
+                  <div class="col-lg-12 my-4 mt-5">
+                    <h1 class="display-4 text-white" style="text-align:center">
+                      <?php
+                        $JSON = json_decode(file_get_contents('https://api.genelpara.com/embed/para-birimleri.json'), true);
+                      ?>
+                     <table class="table">
+                      <thead>
+                        <tr style="color: goldenrod;">
+                          <th scope="col">#</th>
+                          <th scope="col">Birim</th>
+                          <th scope="col">Fiyat</th>
+                          <th scope="col">Değişim</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr style="color: whitesmoke;">
+                          <th scope="row">1</th>
+                          <td>DOLAR</td>
+                          <td>Fiyat: <?php echo $JSON['USD']['satis']; ?></td>
+                          <td>Değişim: <?php echo $JSON['USD']['degisim'];?></td>
+                        </tr>
+                        <tr style="color: whitesmoke;">
+                          <th scope="row">2</th>
+                          <td>EURO</td>
+                          <td>Fiyat: <?php echo $JSON['EUR']['satis']; ?></td>
+                          <td>Değişim: <?php echo $JSON['EUR']['degisim']; ?></td>
+                        </tr>
+                        <tr style="color: whitesmoke;">
+                          <th scope="row">3</th>
+                          <td>STERLIN</td>
+                          <td>Fiyat: <?php echo $JSON['GBP']['satis']; ?></td>
+                          <td>Değişim: <?php echo $JSON['GBP']['degisim']; ?></td>
+                        </tr>
+                        <tr style="color: whitesmoke;">
+                          <th scope="row">4</th>
+                          <td>BITCOIN</td>
+                          <td>Fiyat: <?php echo $JSON['BTC']['satis']; ?></td>
+                          <td>Değişim: <?php echo $JSON['BTC']['degisim']; ?></td>
+                        </tr>
+                        <tr style="color: whitesmoke;">
+                          <th scope="row">4</th>
+                          <td>ALTIN</td>
+                          <td>Fiyat: <?php echo $JSON['GA']['satis']; ?></td>
+                          <td>Değişim: <?php echo $JSON['GA']['degisim']; ?></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    </h1>
+                  </div>
                 </div>
-                <div class="invalid-feedback">
-                  Alan boş ya da girdiğiniz bilgiler Email formatında değil!
-                </div>
-                </div>
-                <div>
-                <label for="sifre"><b style="color: goldenrod;">Password</b> (221210053)</label>
-                <input type="password" placeholder="Password"   name="sifre" onchange="sifreV();" required />
-                <div class="invalid-feedback">
-                  Alan boş ya da şifre rakamdan başka karakter içeriyor!
-                </div>
-                <div class="valid-feedback">
-                  Kriterlere Uyuyor.  
-                </div>
-                </div>
-                
-               <input style="background: radial-gradient(#434343 , #000000); font-weight: bold; color: goldenrod; " class="mt-5" type="submit" value="Log In">
-
-              </form>
-            </p>
+              </div>
+            </section>
           </div>
-      </section>
     </main>
- 
-   
+
     <footer>
       <div class="container">
         <div class="row">
@@ -115,9 +137,8 @@
      <script
      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-     crossorigin="anonymous"></script>
-     <script src="Javascript/jquery.js"></script>
-     <script src="Javascript/popper.min.js"></script>
-     <script src="Javascript/bootstrap.js"></script> 
+     crossorigin="anonymous"
+   ></script>
+
   </body>
 </html>

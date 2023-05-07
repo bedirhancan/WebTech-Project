@@ -55,6 +55,7 @@ main {
 
 .main-nav__item a:hover, .main-nav__item:hover::before {
     color: goldenrod;
+    font-size: 16px;
 
 }      
 

@@ -1,3 +1,25 @@
+<?php 
+                          
+                          $myemail="g221210053@ogr.sakarya.edu.tr";
+                          $mysifre="221210053";
+                          $email = $_POST['email'];
+                          $sifre = $_POST['sifre'];
+                          $namen=explode("@",$email);
+                          $signal=false;
+                          if($email==$myemail && $mysifre==$sifre)
+                          {
+                            $signal=true;
+                            
+                          }else {
+                            $signal=false;
+                            header("refresh:5;url=login.html");
+
+                            
+                            
+                            
+                            //header("Location:login.html");
+                          }
+                        ?>
 <!DOCTYPE html>
 <html lang="tr">
   <head>
@@ -15,10 +37,8 @@
     <link rel="stylesheet" href="CSS/login.css">
   </head>
   <body id="body2">
-    <script src="Javascript/validation.js"></script>
-    <script src="Javascript/changeValidate.js"></script>
 
-    <header class="main-header">
+  <header class="main-header">
       <div id="main-nav" class="container-fluid">
         <a class="main-header__logo">Bedirhan Can</a>
         <nav class="main-nav">
@@ -53,34 +73,29 @@
       <section id="how-it-works">
         <div class="container">
           <div class="row">
-            <p>
-              <form action="login.php" class="forma"  name="myForm"  method="POST" onsubmit ="return validate();" >
-                <h2 class="section-title" ><b style="color: goldenrod;">Login Here</b></h2>
-                <div>
-                <label for="email"><b style="color: goldenrod;">Email</b>(g221210053@ogr.sakarya.edu.tr)</label>
-                <input type="text" placeholder="Email"  name="email" id="email" onchange="emailV();" required autofocus autocomplete="off"/>
-                <div class="valid-feedback">
-                  Kriterlere uyuyor.  
-                </div>
-                <div class="invalid-feedback">
-                  Alan boş ya da girdiğiniz bilgiler Email formatında değil!
-                </div>
-                </div>
-                <div>
-                <label for="sifre"><b style="color: goldenrod;">Password</b> (221210053)</label>
-                <input type="password" placeholder="Password"   name="sifre" onchange="sifreV();" required />
-                <div class="invalid-feedback">
-                  Alan boş ya da şifre rakamdan başka karakter içeriyor!
-                </div>
-                <div class="valid-feedback">
-                  Kriterlere Uyuyor.  
-                </div>
-                </div>
-                
-               <input style="background: radial-gradient(#434343 , #000000); font-weight: bold; color: goldenrod; " class="mt-5" type="submit" value="Log In">
-
-              </form>
-            </p>
+          <section  class="text-white mx-5 mb-5 mt-5">
+        <div class="bg-dark container border border-secondary rounded shadow-lg">
+          <div class="row my-3 ">
+            <div class="col-lg-12 my-4 mt-5">
+              <h1 class="display-4 text-white" style="text-align:center">
+                <p >
+                  <?php
+                    if($signal==true)
+                    {
+                      echo $namen[0]."  Hoşgeldin" ;
+                    }
+                    else
+                    {
+                      echo "Kullanıcı epostası yada şifre hatalı ";
+                      echo "5 saniye içinde geri yönlendiriliyorsunuz";
+                    }
+                  ?>
+                </p>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
           </div>
       </section>
     </main>
@@ -116,8 +131,8 @@
      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
      crossorigin="anonymous"></script>
-     <script src="Javascript/jquery.js"></script>
-     <script src="Javascript/popper.min.js"></script>
-     <script src="Javascript/bootstrap.js"></script> 
+     <script src="/Javascript/jquery.js"></script>
+     <script src="/Javascript/popper.min.js"></script>
+     <script src="/Javascript/bootstrap.js"></script> 
   </body>
 </html>
