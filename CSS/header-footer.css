@@ -1,0 +1,148 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url("base.css");
+@import url("buttons.css");
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    min-height: calc(100vh - 138px);
+}
+
+.main-header {
+    background-color: #212A3E;
+    padding: .8rem 1.6rem;
+}
+.main-sehrim{
+    background: radial-gradient(#434343 , #000000);
+}
+
+.main-nav {
+    display: inline-block;
+    width: calc(100% - 10rem);
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.main-header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+}
+
+.main-header__logo {
+    color: #F1F6F9;
+    text-decoration: none;
+    font-weight: bold;
+}
+.main-nav__item a {
+    text-decoration: none;
+    color: #F1F6F9;
+}
+
+.main-nav__item a:hover, .main-nav__item:hover::before {
+    color: goldenrod;
+    font-size: 16px;
+
+}      
+
+.main-nav__item:active::before, .main-nav__item a:active {
+    color: #F1F6F9;
+}
+
+
+
+footer {
+    background-color: #212A3E;
+    padding: 30px;
+}
+
+footer a {
+    color: #F1F6F9;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#social-links {
+    text-align: right;
+}
+
+.fab, .fab, .far {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.fab:hover {
+   opacity: 0.7;
+}
+
+.fa-facebook {
+    background-color: #4267B2;
+    color: #F1F6F9;
+}
+
+.fa-twitter {
+    background-color: #1DA1F2;
+    color: #F1F6F9;
+}
+.vsco {
+    width: 38px;
+    height: 38px;
+    margin: auto;
+    background-color: #F1F6F9;
+    border-radius: 50%;
+    padding: 2px;
+  }
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    color: #F1F6F9;
+}
+.fa-linkedin {
+    background-color: #0077B5;
+    color: #F1F6F9;
+}
+.fa-spotify
+{
+    background-color: #191414;
+    color: #1DB954;
+}
+#backtotop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#backtotop i {
+    color: #F1F6F9;
+    font-size: 31px;
+    transition: color .6s;
+}
+
+#backtotop i:hover {
+    color:#2E4C6D;
+}

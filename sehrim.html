@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <title>Şehrim</title>
+    <link rel="stylesheet" href="CSS/header-footer.css" />
+    <link rel="stylesheet" href="CSS/anasayfa-main.css" />
+  </head>
+  <body id="body">
+    <header class="main-header">
+      <div id="main-nav" class="container-fluid">
+        <a class="main-header__logo">Bedirhan Can</a>
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a href="ana-sayfa.html">Ana Sayfa</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="ozgecmis.html">Özgeçmiş</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="sehrim.html">Şehrim</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="takimimiz.html">Takımımız</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="ilgi-alani.html">İlgi Alanlarım</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="iletisim.html">İletişim</a>
+            </li>
+            <li class="main-nav__item main-nav__item--login">
+              <a class="btn btn-secondary" href="login.html">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-bg">
+      <div class="container">
+        <section id="slider1" class="main-bg">
+          <div class="">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="3"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="#ref1" onclick="bgChange('image/iskenderun1.jpg');"
+                    >
+                    <img
+                      src="image/iskenderun1.jpg"
+                      class="img-fluid"
+                      alt="Yum"
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5><b>İSKENDERUN</b></h5>
+                    <p>Ayrıntılı bilgi için resme tıklayın.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="#ref2" onclick="bgChange('image/yunus.jpg');"
+                    ><img src="image/yunus.jpg" class="img-fluid" alt="Yum"
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Yunus Sütunu</h5>
+                    <p>Ayrıntılı bilgi için resme tıklayın.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a
+                    href="#ref3"
+                    onclick="bgChange('image/adliye3.jpg');"
+                    ><img
+                      src="image/adliye3.jpg"
+                      class="img-fluid"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Eski Adliye Sarayı</h5>
+                    <p>Ayrıntılı bilgi için resme tıklayın.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a
+                    href="#ref4"
+                    onclick="bgChange('image/aaa.jpg');"
+                    ><img
+                      src="image/aaa.jpg"
+                      class="img-fluid"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>İtalyan Latin Katolik Kilisesi,</h5>
+                    <p>Ayrıntılı bilgi için resme tıklayın.</p>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section id="ref1" class="text-white mx-5 mb-5 mt-5">
+        <div class="container bg-dark border border-success rounded shadow-lg">
+          <div class="row my-3">
+            <div class="col-lg-6 my-4">
+              <article>
+                <h1 style="color: goldenrod"><b>İSKENDERUN</b></h1>
+                <p>
+                  Hatay'ın nüfus bakımından 2. büyük ilçesidir. Nüfusu 248.335
+                  kişidir. İlçe Türkiye'nin en büyük limanlarından birine sahip
+                  olup bu bakımdan deniz ticaretinde önemli bir konumdadır.İlçe
+                  çevresinde doğal plajlar ve yaylalarla çeşitli mesire yerleri
+                  vardır. İlçe merkezi, planlı bir biçimde çağdaş şehircilik
+                  anlayışına uygun olarak gelişmektedir. İlçenin ana caddeleri
+                  denize dik iner. Deniz kıyısındaki alan, Atatürk heykeli ve
+                  çevresiyle kıyıya paralel uzanan Atatürk Bulvarı, eğlence ve
+                  spor tesisleriyle yeniden düzenlenerek 1985'te hizmete
+                  açılmıştır. Bugün, İskenderun Türkiye'nin önde gelen en büyük
+                  ilçelerinden biri olup, özellikle sanayi, deniz ticareti ve
+                  turizm alanında hızla gelişen bir şehirdir.
+                </p>
+                <h2 style="color: goldenrod"><b>Coğrafya</b></h2>
+                <p>
+                  Şehrin batı bölümünü Akdeniz çevreler, doğusu ise Nur
+                  Dağları'na dayamış bir haldedir. İskenderun Körfezi'nin
+                  güneybatıdan gelip kuzeye devam ettiği ovada yerleşmiştir. Nur
+                  Dağları'nın eteklerinde, genişliği 5 km2’yi bulan alan
+                  üzerinde kurulmuş olan İskenderun'un yüzölçümü 247 km2'dir.37
+                  derece kuzey enlemi ile 36-37 derece doğu meridyenleri
+                  üzerinde yer almaktadır.
+                  <br />
+                  Kara, deniz ve hava ulaşımına elverişli bir kenttir. Yörenin
+                  kuraklığı şehrin bu kıvrımlara paralel olarak serilişi, ayrı
+                  bir özellik kazandırır. İlçe topraklarının kuzeyinde Payas,
+                  doğusunda Amanos Dağları, güneydoğusunda Belen, güneyinde
+                  Arsuz ve batısında Akdeniz bulunur.İskenderun Körfezi ise
+                  Akdeniz'in Hatay ve Adana illeri arasına sokulmuş olan en doğu
+                  noktasıdır. Kara ve deniz ulaşımında hizmetlerin oldukça
+                  gelişmiş olduğu bölgede ticaret büyük öneme sahiptir. Adını
+                  aldığı İskenderun ilçesinde bulunan liman, Türkiye'nin Akdeniz
+                  kıyısında bulunan en büyük ikinci limanıdır.
+                  <br />
+                  Geçmişte Orta Doğu'da yaşanmış olan bunalımlardan dolayı
+                  Beyrut'un eski önemini yitirmesi körfez ve çevresine değer
+                  kazandırmıştır. İskenderun Körfezi, Hatay'ın batısını
+                  Güvercinkaya'dan başlayarak Yeşilkent'e dek kuşatır. Körfez
+                  ilde yaklaşık 152 km'lik bir kıyı oluşturur. Akdeniz'in bu
+                  kesimlerinde tuzluluk oranı, binde 38-39, ortalama sıcaklık
+                  ise 22,2 °C'dir. Yöredeki doğal plajlar, ülke turizmi
+                  açısından son derece önemlidir.
+                </p>
+                <h2 style="color: goldenrod"><b>Tarihçe</b></h2>
+                <p>
+                  MÖ 333 yılında, Büyük İskender’in İssos yakınlarında kazandığı
+                  zaferden sonra Alexandreia adıyla kurulmuştur. Bu kent
+                  kurulmadan önceleri ise burada Myriandos adında bir Fenike
+                  şehri bulunmaktaydı. Makedonya Kralı Büyük İskender'in, Pers
+                  İmparatoru III. Darius’a karşı İsos Vadisi'nde üstünlük
+                  sağlamasıyla temeli atılan bu şehir, sahip olduğu coğrafi
+                  önemin etkisiyle tarihinde birçok defa işgale uğramıştır.
+                  <br /><br />
+                  Selevkoslar’dan Romalılara, ardından 395 yılında Doğu Roma'ya
+                  katılmış ve 7. yüzyıl ortalarında İslam Devleti'nden 1516
+                  yılında Memlük İmparatorluğu’na geçmiş, 1517’de Yavuz Sultan
+                  Selim'in Mısır Seferi sırasında yapılan Mercidabık Savaşı'yla
+                  da Osmanlı İmparatorluğu'na katılan İskenderun'a, I. Dünya
+                  Savaşında Birleşik Krallık ve ardından Fransa egemen olmuştur.
+                  1938 yılına kadar Fransız himayesinde Suriye'nin bir sancağı
+                  olarak kalmıştır. 5 Temmuz 1939'da Türk Ordusu'nun
+                  İskenderun'a girmesiyle, kurtuluş hareketinin temelleri
+                  atılmıştır.
+                  <br /><br />
+                  İskenderun, Türkiye'ye katıldığı zamandan 1974 yılına kadar
+                  olan dönemde oldukça küçük bir kasabaydı. 1974 yılında üretime
+                  geçen Türkiye'nin üçüncü Demir-Çelik Fabrikası, kent yaşamına
+                  büyük canlılık getirmiştir. Ayrıca, süperfosfat fabrikası,
+                  bitkisel yağ, yem, un, konserve, salça, çırçır, dokuma,
+                  çeltik, oto ve makine yedek parçaları vb. endüstri dalları
+                  vardır. Boru hattı ile Batman'dan gelen petrol, İskenderun
+                  Limanı'ndan deniz yoluyla Mersin'e gönderilir. Limanda
+                  Demir-Çelik ve Süperfosfat fabrikalarının iskeleleriyle
+                  NATO'ya bağlı bir iskele ve demiryolu istasyonu bulunur.
+                  Türkiye'nin dördüncü büyük limanı olan İskenderun Limanı'nın
+                  yıllık yük kapasitesi 8.7 milyon tondur.
+                </p>
+              </article>
+            </div>
+            <div class="col-lg-6 my-4">
+              <img src="image/iskenderun2.jpg" class="img-fluid rounded" />
+              <hr />
+              <img src="image/iskenderun3.jpg" width="640" height="365" />
+              <hr />
+              <div class="my-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    class="embed-responsive-item"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205052.2151244684!2d36.14217424698364!3d36.579642925536525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152f592d49f10bcd%3A0x71627fb2e950ada4!2s%C4%B0skenderun%2C%20Hatay!5e0!3m2!1str!2str!4v1683035702176!5m2!1str!2str"
+                    width="640"
+                    height="250"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="ref2" class="text-white mx-5 mb-5 mt-5">
+        <div class="container bg-dark border border-success rounded shadow-lg">
+          <div class="row my-3">
+            <div class="col-lg-6 my-4">
+              <article>
+                <h1 style="color: goldenrod">
+                  <b>Yunus Sütunu</b>
+                </h1>
+                <p>
+                  Yunus Sütunu, Hatay, İskenderun'un Sarıseki mahallesinde yer
+                  alan tarihi kalıntıdır. Sarıseki mahallesi ile aynı adı
+                  taşıyan, geçit vermez Sarıseki Kanyonunun Akdeniz ile
+                  buluştuğu yerde yer alan bu tarihi kalıntıdan günümüze
+                  bakımsız taş yığınlarından başka pek fazla bir şey
+                  kalmamıştır. Yöre halkı arasında Yunus (peygamber)'un balığın
+                  karnından karaya buradan çıktığı inancı hakimdir. İsmini de
+                  buradan alır. Oysa tarihi kaynaklarda, konumu itibarıyla
+                  aldığı vazifeye ithafen Kilikya kapısı olarak
+                  adlandırılıyordu.
+                  <br />
+                  Sütun, Sarıseki kanyonunun içinden akan Sarıseki çayının iki
+                  kıyısında iki yüz metre mesafeyle birbirine paralel bir
+                  şekilde uzanan iki surdan oluşmaktaydı. Sütun, herhangi bir
+                  orduya dik Amanos Dağlarının tımanma şansı vermediği yüksek,
+                  ve yine herhangi bir orduya Amanosları bir satır gibi ikiye
+                  ayıran Sarıseki kanyonunun geçiş şansı vermediği sarp bir
+                  mevkiden başlar denize kadar uzanırdı.
+                </p>
+                <hr />
+                <h1 style="color: goldenrod">
+                  <b>Alexandretta Antik Kenti</b>
+                </h1>
+                <p>
+                  M.Ö 333 yılında Büyük İskender tarafından kurulan şehrin o
+                  zamanki ismi Alexandreia olup günümüzde İskenderun Kenti
+                  olarak geçmektedir. Kentten günümüze İskenderun’un girişteki
+                  liman kalıntılarına ait duvarlar, şehir merkezine giderken yer
+                  yer tarihi binalar mevcuttur. Ayrıca 1973 yılında Esentepe’de
+                  yapılan kazılarda Antik Kente ait kalıntılar ve Büyük
+                  İskender’e ait bir büstü bulunmuş olup değerli kalıntılar
+                  arasında yer alan ve ilçede yaşamın tarih öncesi dönemlere
+                  kadar ulaştığını gösteren kent niteliğindedir. Tarih boyunca
+                  birçok kez işgal görmesinden dolayı kentin günümüze az bir
+                  kısmı ulaşabilmiş olup görülmeye değer yerler arasındadır.
+                </p>
+                <br />
+                <hr />
+              </article>
+            </div>
+            <div class="col-lg-6 my-4">
+              <img src="image/yunus3.jpeg" width="320" height="223" />
+              <img src="image/yunus2.jpg" width="315" height="223" />
+              <hr />
+              <img
+                src="image/alexandretta-antik-kenti.jpeg"
+                width="320"
+                height="210"
+              />
+              <img
+                src="image/alexandretta-antik-kenti2.webp"
+                width="315"
+                height="210"
+              />
+              <hr />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="ref3" class="text-white mx-5 mb-5 mt-5">
+        <div class="container bg-dark border border-success rounded shadow-lg">
+          <div class="row my-3">
+            <div class="col-lg-6 my-4">
+              <article>
+                  <h1 style="color: goldenrod">
+                    <b>Eski Adliye Sarayı</b>
+                  </h1>
+                  <p>
+                    1925 yılında Fransızlar tarafından postane binası olarak
+                    Ayvazyan adlı bir Ermeni tarafından inşa edilen bina 1939'da
+                    Hatay Meclisinin kararıyla Hatay'ın Türkiye'ye ilhakı
+                    sonrasında adliye olarak kullanılmaya başlanmıştır. 2011
+                    yılına dek adliye olarak hizmet veren bina bu yılda adliyenin
+                    yeni binaya taşınması sonrası atıl kalmıştır. Restore edilerek
+                    müze yapılması planlanmakla birlikte bu konuda henüz fiili bir
+                    çalışma yoktur.
+                    <br />
+                    <h4 style="color: goldenrod"><b>Saat Kulesi</b></h4>
+                    Binanın çatısından üç metrelik bir çıkıntıdan müteşekkil olan
+                    saat kulesinin üzeri basık piramit şeklinde kubbeyle örtülmüş
+                    olan üst kısmında kuzey ve güney cephe taraflarında iki kadran
+                    yer almaktadır. Dikdörtgen silme alınlıkların altında yer alan
+                    kadranlar Charvet tarafından Lyon'da üretilmiştir.
+                  </p>
+                  <hr />
+                  <h1 style="color: goldenrod">
+                    <b>Kaptanpaşa Cami (Ulucami)</b>
+                  </h1>
+                  <p>
+                    Mülkiyeti Vakıflar Genel Müdürlüğüne ait olan Merkez
+                    Kaptanpaşa Camii Hicri 1280 (Miladi 1864) da Kaptan Mehmet
+                    Paşa tarafından ahşap bina ve tek şerefeli taştan minare
+                    olarak yaptırılmıştır. 1974 yılında ahşap kısım yıkılarak bu
+                    günkü şekliyle betonarme ve tek kubbe ek olarak yeniden inşa
+                    edilmiş, eski taş minareye dokunulmadan yeniden 40 metre
+                    yüksekliğinde ikişer şerefeli iki minare daha ilave
+                    edilmiştir. Ortaya çıkan çatlaklar yüzünden tehlikeli durum
+                    arz etmesi sebebiyle sonradan yapılmış olan iki adet çift
+                    şerefeli minare Vakıflar Bölge Müdürlüğünün yıkım kararı ile
+                    2005 yılı sonu itibariyle tamamen yıktırılmıştır. Yıkılan
+                    Minarelerin yerine yeniden bir minare yapılmıştır. 1864
+                    yılından günümüze ulaşan bu caminin sadece eski taş minaresi
+                    tescilli tarihi eserdir.
+                  </p>
+                  <br />
+                  <hr />
+              </article>
+            </div>
+            <div class="col-lg-6 my-4">
+              <img src="image/adliye.jpeg" width="320" height="240"/>
+              <img src="image/adliye2.jpg" width="315" height="240"/>
+              <hr />
+              <img src="image/cami.jpeg" width="320" height="240" />
+              <img src="image/cami2.jpg" width="315" height="240" />
+              <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="ref4" class="text-white mx-5 mb-5 mt-5">
+        <div class="container bg-dark border border-success rounded shadow-lg">
+          <div class="row my-3">
+            <div class="col-lg-6 my-4">
+              <article>
+                <h2 style="color: goldenrod"><b>İtalyan Latin Katolik Kilisesi</b></h2>
+                <p>
+                  16. yüzyılda İspanya’da kurulmuş Çıplak Ayaklı Karmelit Rahibeler Tarikatı üyeleri,1858’de İskenderun’a gelmişler ve hemen Müjdeleme Kilisesi ismi ile yeni bir kilisenin inşasına başlamışlardır. Korkunç bir yangın sonrasında kilise baştan aşağı tekrar yenilenmiş (1888-1901) ve yeniden hizmete açılmıştır.
+                  <br>
+                   Toskana bölgesinden gelen peder Paolo Pergantino, 1871’den itibaren kırk yıl boyunca kilisede hizmet verdi.1858’den başlayıp 1914’ e kadar süren dönemde burada hizmet eden pederler İtalyan hükümeti tarafından gümüş ve altın madalyalarla ödüllendirilmişlerdir. Müslüman halk da bu hizmet,  dinsel, kültürel ve insani faaliyetleri takdirle karşılayıp saygı göstermişlerdir. Bu dönemde yapılan tüm bu güzel çalışmalar, ruhsal hizmetler bütün İskenderun halkının peder Paolo Pergantino’ya  büyük saygı duymalarını sağlamıştır.Zamanla, pederlerin ikamet edebilmeleri için kiliseye bir manastır da ilave edildi.
+                  <br>
+                  O tarihte Fransa’nın koruması altında olan İskenderun daha sonra 1911’ de İtalyan koruması altına geçmiştir. 1920’den 1938’e kadarki dönemde, Suriye hakimiyetinden tekrar Fransız korumasına girmeye çalışan şehir, sonunda da günümüzde olduğu gibi Türkiye Cumhuriyeti hakimiyetine girmiştir.
+                </p>
+                <br>
+                <hr>
+                <h2 style="color: goldenrod"><b>Aziz Nikola Rum Ortodoks Kilisesi</b></h2>
+                <p>
+                  Osmanlı Padişahı Sultan Abdülaziz fermanı ile 1870 yılı başlarında inşaatına başlanan ve 1876 yılında inşaası tamamlanıp ibadete açılan İskenderun Aziz Nikola (St. Nicholas) Rum Ortodoks Kilisesi, doğu batı doğrultusunda üç nefli Bazilikal bir planda inşa edilmiştir. Kilisenin giriş bölümünün her iki köşesine çan kuleleri yerleştirilmiştir.
+                  <br>
+                  Yapının apsis bölümünün hemen üstünde, Mesih İsa’nın “Son akşam yemeği” konulu çalışma duvar üzerine resmedilmiştir. Ayni çalışmanın üstünde beşik tonoza üçgen bir form içinde “Göz” şekli yerleştirilmiştir. Orta nefin beşik tonozunda ana giriş bölümünün üst kısmında Mesih İsa ve Meryem Ana figürleri farklı boyutlarda işlenmiştir.
+                  <br>
+                  İskenderun’da yaşayan Hristiyan Rum Ortodoks Cemaatine mensup vatandaşlar olarak, her pazar ve bayram günleri cemaat mensupları kilisede yapılan ayinlere katılmakta ve dini vecibelerini yerine getirmektedirler.
+                </p>
+                <hr>
+              </article>
+            </div>
+            <div class="col-lg-6 my-4">
+              <br><br>
+              <img src="image/aaa2.jpeg" width="320" height="250" />
+              <img src="image/aaa3.jpg" width="315" height="250" />
+              <br><br>
+              <hr />
+              <img src="image/ccc2.jpeg" width="320" height="260"/>
+              <img src="image/ccc3.png" width="315" height="260"/>
+              <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br />
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <ul id="footer-links">
+              <li>
+                <a href=""
+                  ><small
+                    >Copyright © 2023. All rights reserved.</small
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul id="social-links">
+              <li>
+                <a
+                  href="https://www.facebook.com/bedocann8/"
+                  class="fab fa-facebook"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/bedocann8"
+                  class="fab fa-twitter"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/bedocann8/"
+                  class="fab fa-instagram"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/bedirhancan/"
+                  class="fab fa-linkedin"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a href="https://vsco.co/bedocann8/" target="_blank">
+                  <img
+                    class="vsco"
+                    src="https://assets.vsco.co/assets/images/icons/vsco-seal.svg"
+                    alt="vsco logo"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/user/c3p98u36gl1np9cwmypbmmnf7?si=760845a043b24cd1"
+                  class="fab fa-spotify"
+                  target="_blank"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#body" id="backtotop">
+      <i class="fas fa-chevron-circle-up"></i>
+    </a>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Javascript/jquery.js"></script>
+    <script src="Javascript/popper.min.js"></script>
+    <script src="Javascript/bootstrap.js"></script>
+    <script src="/Javascript/commander.js"></script>
+    <script src="/Javascript/onlyBgChange.js"></script>
+  </body>
+</html>

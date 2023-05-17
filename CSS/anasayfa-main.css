@@ -1,0 +1,80 @@
+#how-it-works { 
+    padding: 1rem;
+    text-align: center;
+}
+.main-bg{
+    background: radial-gradient(#434343 , #000000);
+
+}
+.main-bg1{
+    background: linear-gradient(to bottom, rgba(252, 153, 124, 0.2),rgba(250, 81, 30, 0.2)),
+    url('../image/takım.jpg');
+
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #fff;
+    font-size: 3rem;
+}
+#showcase { 
+    background: 
+    linear-gradient(to bottom, rgba(252, 153, 124, 0.2),rgba(250, 81, 30, 0.2)),
+    url('../image/main-background.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    position: relative;
+}
+#showcase-takim{
+    background: 
+    linear-gradient(to bottom, rgba(252, 153, 124, 0.2),rgba(250, 81, 30, 0.2)),
+    url('../image/takım.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+}
+
+#showcase .content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: goldenrod;
+    background: rgba(46, 76, 109, 0.3);
+    padding: 2rem;
+    width: 60%;
+    border-radius: 1rem;
+}
+
+#showcase h1 {
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media (min-width: 576px) { 
+    #showcase {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 768px) {
+    #showcase {
+        height: 60vh;
+    }
+}
+
+@media (min-width: 992px) { 
+    #showcase {
+        height: 70vh;
+    }
+   
+ }
